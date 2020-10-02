@@ -26,6 +26,14 @@
     max-width: 1280px;
     background-color: black;
 }
+
+@media screen and (max-width:320px) {
+    .root {
+        max-width: 320px;
+    }
+     
+}
+
 .page {
     margin: 0 auto;
     font-family: "Inter", "Arial", sans-serif;
@@ -37,17 +45,45 @@ max-width: 882px;
 padding: 0 190px 0;
 }
 
+@media screen and (max-width:320px) {
+    .content {
+        max-width: 320px;
+        padding: 0;
+    }
+     
+}
+
+
 .header {
 max-width: 882px;
-height: 74px;
+padding-bottom: 74px;
 border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 margin: 45px 190px 0;
 }
+
+@media screen and (max-width:320px) {
+    .header {
+        max-width: 320px;
+padding-bottom: 30px;
+margin-top: 28px 
+    }
+     
+}
+
 
 .header__logo {
 margin: 0%;
 padding: 0%;
 max-width: 142px;
+}
+
+@media screen and (max-width:320px) {
+    .header__logo {
+        margin: 0%;
+        padding: 0%;
+        max-width: 104px;
+    }
+     
 }
 
 .profile {
@@ -57,6 +93,19 @@ max-width: 142px;
     grid-template-rows: 1fr;
     padding-bottom: 47px;
     padding-top: 36px;
+}
+
+@media screen and (max-width:320px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+        max-width: 282px;
+        justify-content: center;
+        padding-bottom: 36px;
+        padding-top: 36px;
+        margin: 0% auto;
+    }
+     
 }
 
 
@@ -71,10 +120,29 @@ color: #FFFFFF;
 text-align: left;
 }
 
+@media screen and (max-width:320px) {
+    .profile__info {
+        display: grid;
+        grid-template-columns: 230px 40px;
+        grid-template-rows: 38px 14px ;
+        gap: 14px 0;
+        } 
+    }
+     
+}
+
 .profile__edit-vector {
     width: 10px;
     height: 10px;
     justify-content: center;
+}
+
+@media screen and (max-width:320px) {
+    .profile__edit-vector {
+        width: 8px;
+        height: 8px;
+    }
+     
 }
 
 .profile__edit-button {
@@ -84,6 +152,14 @@ text-align: left;
     height: 24px;
     align-self: end;
     border: 1px solid white;
+}
+
+@media screen and (max-width:320px) {
+    .profile__edit-button {
+        width: 18px;
+        height: 18px; 
+    }
+     
 }
 
 .profile__edit-button:hover {
@@ -100,11 +176,31 @@ text-align: left;
     margin-bottom: 16px;
 }
 
+@media screen and (max-width:320px) {
+    .profile__title {
+        max-width: 201px;
+        font-weight: 500;
+        font-size: 27px;
+        margin: 0 1px 0 34px;
+    }
+     
+}
+
+
 .profile__subtitle{
     max-width: 318px;
-font-size: 18px;
-line-height: 22px;  
-margin: 0%;
+    font-size: 18px;
+    line-height: 22px;  
+    margin: 0 1px 0 44px;
+}
+
+@media screen and (max-width:320px) {
+    .profile__subtitle {
+        max-width: 280px;
+        font-size: 14px;
+        margin-bottom: 36px;
+    }
+     
 }
 
 
@@ -113,11 +209,27 @@ margin: 0%;
     border-radius: 60px;
 }
 
+@media screen and (max-width:320px) {
+    .profile__avatar {
+     margin: 0 auto;
+    }
+     
+}
+
+
 .profile__add-button {
     max-width: 150px;
     height: 50px;
     background-color: black;
     border: 1px solid white;
+}
+
+@media screen and (max-width:320px) {
+    .profile__add-button {
+        max-width: 282px;
+        margin-top: 40px;
+    }
+     
 }
 
 .profile__add-button:hover {
@@ -129,6 +241,7 @@ margin: 0%;
     margin: auto;
 }
 
+
 .elements {
     display: grid;
     max-width: 882px;
@@ -139,10 +252,34 @@ margin: 0%;
     margin:auto;
 }
 
+@media screen and (max-width:320px) {
+   .elements{
+display: flex;
+flex-direction: column;
+max-width: 282px;
+align-items: center;
+    }
+     
+}
+
 .element {
     background-color: #FFFFFF;
     border-radius: 10px;
     
+}
+
+.element__button {
+    background-color: white;
+    border: none;
+    margin: 0%;
+    padding: 0;
+    margin-top: 29px;
+    margin-left: 45px; 
+}
+
+.element__button:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
 
 .element__text {
@@ -153,9 +290,11 @@ margin: 0%;
     padding-left: 21px;
 }
 
-.element__button-like {
-    margin-top: 29px;
-    margin-left: 45px;
+@media screen and (max-width:320px) {
+    .element__text {
+        float: none;
+    }
+     
 }
 
 .element__image {
@@ -165,8 +304,9 @@ margin: 0%;
     border-radius: 10px 10px 0 0;
 }
 
+
 .popup {
-    display: flex;
+    display: none;
     position:fixed;
     top:0;
     left:0;
@@ -177,6 +317,7 @@ margin: 0%;
     background-color: rgba(0, 0, 0, 0.5);
     
 }
+
 
 .popup__container {
    width: 430px;
@@ -190,6 +331,14 @@ margin: 0%;
    
 }
 
+@media screen and (max-width:320px) {
+    .popup__container {
+        width: 282px;
+        height: 322px;
+       
+    }  
+}
+
 fieldset {
    height: 262px;
    max-width: 358px;
@@ -198,22 +347,89 @@ fieldset {
    border: none;
 }
 
-.popap__heading {
+@media screen and (max-width:320px) {
+    .fieldset {
+        width: 238px;
+        height: 270px;
+    }  
+}
+
+.popup__heading {
     margin-top: 0%;
 }
 
-.popup__close-icon {
+@media screen and (max-width:320px) {
+    .popup__heading {
+        max-width: 238px;
+       font-size: 18px;
+       
+    }  
+}
+
+
+.popup__button {
+    border: none;
+    background:none;
     position: absolute;
     top: -46px;
     right: -48px;
-
-    text-align: right;
 }
 
-.popup__content {
+@media screen and (max-width:320px) {
+    .popup__button {
+        top: -30px;
+        right: -18px;  
+    }
+}
+
+@media screen and (max-width:320px) {
+    .popup__close-icon {
+       max-width: 26px; 
+    }
+}
+
+.popup__button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.popup__form {
     margin: auto;
-   
 }
+
+@media screen and (max-width:320px) {
+    .popup__form {
+     max-width: 282px;
+    } 
+}
+
+@media screen and (max-width:320px) {
+    .popup__info-text {
+     max-width: 282px;
+    } 
+}
+
+
+@media screen and (max-width:320px) {
+    .popup__line {
+     max-width: 238px;
+    } 
+}
+
+
+
+@media screen and (max-width:320px) {
+    .popup__name {
+        max-width: 238px
+    }
+}
+
+@media screen and (max-width:320px) {
+    .popup__information {
+        max-width: 238px
+    }
+}
+
 
 .popup_opened {
     display: flex;
@@ -225,13 +441,21 @@ fieldset {
     padding-bottom: 13px;
 }
 
-.popap__submit-button {
+
+.popup__submit-button {
     margin-top: 48px;
     color:white;
     font-size: 18px;
     padding: 14px 125px 18px;
     background-color: black;
+}
 
+@media screen and (max-width:320px) {
+    .popup__submit-button {
+        padding: 14px 74px 14px;
+        max-width: 238px;
+        font-size: 14px;
+    }
 }
 
 input[type="text" i] {
@@ -253,9 +477,24 @@ input[type="text" i] {
     margin: 0%;
 }
 
+@media screen and (max-width:320px) {
+    .footer {
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
+
 .footer__info {
 max-width: 318px;
 font-size: 18px;
 color:#545454;
-outline: 1px solid red;
+}
+
+@media screen and (max-width:320px) {
+    .footer__info {
+        max-width: 282px;
+        padding: 48px 19px 36px;
+        margin: 0%;
+    }
 }
