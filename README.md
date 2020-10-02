@@ -20,4 +20,4 @@
 * HTML 5.0.;
 * CSS3.0;
 
-Ссылка на проект на  GitHub: https://alina-7.github.io/russian-travel/index.html 
+Ссылка на проект на  GitHub: https://alina-7.github.io/mesto/index.html 
