@@ -1,0 +1,5 @@
+@media screen and (max-width:320px) {
+    .popup__name {
+        max-width: 238px
+    }
+}

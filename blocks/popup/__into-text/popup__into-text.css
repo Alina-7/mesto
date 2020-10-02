@@ -1,0 +1,20 @@
+.popup__info-text {
+    height: 262px;
+    max-width: 358px;
+    margin:auto;
+    padding: 0%;
+    border: none;
+ }
+ 
+ @media screen and (max-width:320px) {
+     .popup__info-text {
+         width: 238px;
+         height: 270px;
+     }  
+ }
+
+ /* @media screen and (max-width:320px) {
+    .popup__info-text {
+     max-width: 282px;
+    } 
+} */

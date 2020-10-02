@@ -1,22 +1,17 @@
-// console.log("привет!")
 
-
-const buttonOpenPopup = document.querySelector(".profile__edit-button")
-const buttonClosePopup = document.querySelector(".popup__close-icon")
-const popup = document.querySelector(".popup")
-
-const popupToggle = (event) => {
-    popup.classList.toggle("popup_opened")
+const buttonOpenPopup = document.querySelector(".profile__edit-button");
+const buttonClosePopup = document.querySelector(".popup__close-icon");
+const popup = document.querySelector(".popup");
+const formElement = popup.querySelector(".popup__form");
+const popupToggle = () => {
+    popup.classList.toggle("popup_opened");
 }
 
 
-buttonOpenPopup.addEventListener("click", popupToggle)
-buttonClosePopup.addEventListener("click", popupToggle)
+buttonOpenPopup.addEventListener("click", popupToggle);
+buttonClosePopup.addEventListener("click", popupToggle);
 
 
-
-
-let formElement = querySelector(".popup__form") 
 function formSubmitHandler (evt) {
     evt.preventDefault();
 
@@ -26,11 +21,10 @@ function formSubmitHandler (evt) {
     nameInput.value;
     jobInput.value;
 
-
-    document.querySelector('.profile__title').textContent = nameInput.value
-    document.querySelector('.profile__subtitle').textContent += jobInput.value
-
-
+    document.querySelector('.profile__title').textContent = nameInput.value;
+    document.querySelector('.profile__subtitle').textContent = jobInput.value;
+    
+    popupToggle();
 }
 
 formElement.addEventListener('submit', formSubmitHandler);
