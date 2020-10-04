@@ -2,12 +2,13 @@
 .content {
     text-align: center;
     max-width: 882px;
-    padding: 0 190px 0;
+    margin: 0 auto;
     }
     
     @media screen and (max-width:320px) {
         .content {
             max-width: 320px;
             padding: 0;
+            margin: 0;
         }  
     }

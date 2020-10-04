@@ -2,14 +2,10 @@
     font-weight: 900;
     font-size: 24px;
     max-width: 220px;
-    float: left;
     padding-left: 21px;
-    margin: auto;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-@media screen and (max-width:320px) {
-    .element__text {
-        max-width: 220px;
-        
-    }
-}

@@ -1,5 +1,17 @@
+
+.popup__information {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 13px;
+    padding-top: 27px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+
 @media screen and (max-width:320px) {
     .popup__information {
-        max-width: 238px
+        max-width: 230px
     }
 }

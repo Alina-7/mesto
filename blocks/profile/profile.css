@@ -1,7 +1,8 @@
 .profile {
+    font-family: "Inter", "Arial", sans-serif;
     display: grid;
     max-width: 882px;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 150px 562px 160px;
     grid-template-rows: 1fr;
     padding-bottom: 47px;
     padding-top: 36px;

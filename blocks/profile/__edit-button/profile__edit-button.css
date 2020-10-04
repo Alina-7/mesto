@@ -2,9 +2,12 @@
     margin: 0%;
     background-color: black;
     width: 24px;
-    height: 24px;
-    align-self: end;
+    padding: 12px 0;
     border: 1px solid white;
+    background-image: url(../../../images/edit-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
 }
 
 @media screen and (max-width:320px) {

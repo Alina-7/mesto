@@ -4,6 +4,7 @@
     font-size: 18px;
     padding: 14px 125px 18px;
     background-color: black;
+    border: none;
 }
 
 @media screen and (max-width:320px) {
@@ -12,4 +13,8 @@
         max-width: 238px;
         font-size: 14px;
     }
+}
+.popup__submit-button:hover {
+    opacity: 0.6;
+    cursor: pointer;
 }
