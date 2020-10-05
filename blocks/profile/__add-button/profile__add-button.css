@@ -1,17 +1,21 @@
 .profile__add-button {
-    max-width: 150px;
-    padding: 25px 0;
+    padding: 25px 75px;
     background-color: black;
     border: 2px solid white;
     background-image: url(../../../images/add-button.svg);
     background-position: center;
-    background-repeat: no-repeat;
-    align-self: center;
+    background-repeat: no-repeat;  
+}
+
+@media screen and (max-width:672px) {
+    .profile__add-button {
+       margin: 0 auto;
+       padding: 25px 130px;
+    } 
 }
 
 @media screen and (max-width:320px) {
     .profile__add-button {
-        max-width: 282px;
         align-self: auto;
         margin-top: 36px;
     } 
@@ -21,3 +25,4 @@
     opacity: 0.6;
     cursor: pointer;
 }
+

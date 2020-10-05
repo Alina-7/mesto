@@ -10,10 +10,17 @@
     padding: 20px 20px;
 }
 
+@media screen and (max-width:875px) {
+    .popup__close-icon {
+        padding: 15px;
+        top: -68px;
+        right: -18px;    
+    }
+}
+
 @media screen and (max-width:320px) {
     .popup__close-icon {
-        top: -30px;
-        right: -18px;  
+        padding: 13px;
     }
 }
 .popup__close-icon:hover {

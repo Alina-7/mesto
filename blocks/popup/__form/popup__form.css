@@ -9,11 +9,16 @@
     position: relative;
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:875px) {
     .popup__form {
      margin: 0;
-     max-width: 282px;
+     max-width: 300px;
     padding: 25px 20px;
     } 
 }
 
+@media screen and (max-width:320px) {
+    .popup__form {
+     max-width: 282px;
+    } 
+}

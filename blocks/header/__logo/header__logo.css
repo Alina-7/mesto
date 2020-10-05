@@ -5,9 +5,16 @@
     max-width: 142px;
     }
     
-    @media screen and (max-width:320px) {
-        .header__logo {
-            max-width: 104px;
-            margin-left: 27px;
+
+@media screen and (max-width:1024px) and (min-width:321px) {
+    .header__logo {
+        padding-left: 20px;
+        }
+    }
+
+ @media screen and (max-width:320px) {
+    .header__logo {
+        max-width: 104px;
+        padding-left: 27px;
         }  
     }

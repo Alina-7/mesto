@@ -1,16 +1,24 @@
 .profile {
     font-family: "Inter", "Arial", sans-serif;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     max-width: 882px;
-    grid-template-columns: 150px 562px 160px;
-    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     padding-bottom: 47px;
-    padding-top: 36px;
+    padding-top: 36px;    
+}
+
+@media screen and (max-width:1024px) and (min-width:321px) {
+    .profile {
+        padding-left: 20px;
+    }
 }
 
 @media screen and (max-width:320px) {
     .profile {
-        display: flex;
+        padding-left: 0;
         flex-direction: column;
         max-width: 282px;
         justify-content: center;
@@ -18,4 +26,8 @@
         padding-top: 36px;
         margin: 0% auto;
     }   
+}
+
+.pforile:last-child{
+outline: 1px solid red;
 }
