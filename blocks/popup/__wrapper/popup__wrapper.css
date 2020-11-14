@@ -1,0 +1,17 @@
+.popup__wrapper{
+    position: relative;
+    margin: 0 auto;
+  
+}
+
+@media screen and (max-width:875px) {
+    .popup__wrapper {
+    
+    } 
+}
+
+@media screen and (max-width:320px) {
+    .popup__wrapper {
+    } 
+}
+

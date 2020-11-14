@@ -1,0 +1,10 @@
+.popup__close-icon_image{
+    top: -40px;
+    right: -40px;
+}
+
+
+.popup__close-icon_image:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}

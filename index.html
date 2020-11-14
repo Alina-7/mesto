@@ -28,61 +28,25 @@
                 </button>
              </section>
             <section class="elements">
+
+                <template class="template">
                 <article class="element">
-                        <img src="./images/by.jpg" class="element__image" alt="Ингушетия">
+                        <img src="" class="element__image" alt="">
+                            <button class="element__button-delete" id="delete" type="button" aria-label="Удалить"></button>
                         <div class="element__description">
-                        <h2 class="element__text">Ингушетия</h2>  
-                        <button class="element__button" type="button" aria-label="Нравится">
+                        <h2 class="element__text"></h2>
+                        <button class="element__button" type="button"  id="button-like" aria-label="Нравится">
                         </button>
                         </div>
                 </article>
-                <article class="element">
-                        <img src="./images/dombai.jpeg" class="element__image" alt="Домбай">
-                        <div class="element__description">
-                            <h2 class="element__text">Домбай</h2>
-                            <button class="element__button" type="button" aria-label="Нравится">
-                           </button>
-                        </div>        
-                </article>
-                <article class="element">
-                    <img src="./images/dagestan.jpg" class="element__image" alt="Дагестан">
-                    <div class="element__description">
-                        <h2 class="element__text">Дагестан</h2>
-                        <button class="element__button" type="button" aria-label="Нравится"></button>
-                    </div>
-            </article>
-                <article class="element">
-                        <img src="./images/kuban.jpg" class="element__image" alt="Кубань">
-                        <div class="element__description">
-                            <h2 class="element__text">Кубань</h2>
-                            <button class="element__button" type="button" aria-label="Нравится"></button>
-                         </div>
-                        
-                </article>
-                <article class="element">
-                        <img src="./images/karachaevsk.png" class="element__image" alt="Карачаевск">
-                        <div class="element__description">
-                            <h2 class="element__text">Карачаевск</h2>
-                            <button class="element__button" type="button" aria-label="Нравится"></button>
-                        </div>
-                        
-                </article>
-                <article class="element">
-                        <img src="./images/albrus.jpg" class="element__image" alt="Эльбрус">
-                        <div class="element__description">
-                            <h2 class="element__text">Эльбрус</h2>
-                            <button class="element__button" type="button" aria-label="Нравится">
-                            </button>
-                        </div>
-                       
-                </article>
-                
+            </template>
+
             </section>
             </main>
          <footer class="footer">
              <p class="footer__info">© 2020 Mesto Russia</p>
          </footer>
-         <div class="popup">
+         <popup class="popup">
                 <form class="popup__form" name="Информация о пользователе">
                         <fieldset class="popup__info-text">
                                 <button class="popup__close-icon" type="button" aria-label="Кнопка закрытия"></button>
@@ -91,11 +55,30 @@
                                 <input type="text" class="popup__information popup__information_type_job" placeholder="О себе" name="О себе" value="">
                                 <button type="submit" class="popup__submit-button">Сохранить</button>
                               </fieldset>
-                            </form>
-                    
-        </div>
+                            </form>       
+         </popup>
+        <popup class="popup popup_card">
+            <form class="popup__form">
+                <fieldset class="popup__info-text">
+                <button class="popup__close-icon popup__close-icon_card" type="button" aria-label="Кнопка закрытия добавления карточки"></button>
+                <h2 class="popup__heading">Новое место</h2>
+                <input type="text" class="popup__information popup__card-title" placeholder="Название">
+                <input type="text" class="popup__information popup__card-image" placeholder="Ссылка на картинку">
+                <button type="submit" class="popup__submit-button">Создать</button>
+            </fieldset>
+            </form>
+        </popup>
+        
+        <popup class="popup popup_picture">
+            <div class="popup__wrapper">
+                <img src="" class="popup__image" alt="Описание">
+                <button class="popup__close-icon popup__close-icon_image"></button>
+                <h2 class="popup__image-name"></h2>
+            </div>
+
+        </popup>
     </div>
-        <script src="./scripts/index.js">
+        <script src="./scripts/index.js" defer>
         </script>
     </body>
  </html>
