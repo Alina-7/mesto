@@ -96,33 +96,18 @@ formElement.addEventListener("submit", formSubmitHandler);
 
 
 
-// buttonClosePopupPreview.addEventListener('click', closePopupPreview);
-
-
-  
   function deleteCard(node){
     node.remove();
       };
 
 
 
-const cardSubmitHandler = (evt) =>  {
-evt.preventDefault();
-
-const cardItem = getCardItem({
-  name: titleInput.value,
-  link: imageInput.value
-});
-
-  elementsContainer.prepend(cardItem); 
-  popupCloseCards();
-};
-
-
- const getCardItem = (cardDetails) => {
+ function getCardItem (cardDetails) {
   const cardElement = template.cloneNode(true).content;
   const cardTitle = cardElement.querySelector('.element__text');
   const cardImage = cardElement.querySelector('.element__image');
+
+  cardImage.addEventListener('click', () => handlerImagePreview(cardDetails));
   
   cardTitle.textContent = cardDetails.name; 
   cardImage.src = cardDetails.link;
@@ -131,12 +116,21 @@ const cardItem = getCardItem({
     const theTarget = evt.target.closest('.element');
     deleteCard(theTarget);
     });
-
-  elementsContainer.append(cardElement); 
   return cardElement;
  };
-
  
+
+
+const cardSubmitHandler = (evt) =>  {
+  evt.preventDefault();
+  const cardItem = getCardItem({
+    name: titleInput.value,
+    link: imageInput.value
+  });
+  
+  elementsContainer.prepend(cardItem);  
+    popupCloseCards();
+  };
 
 const bindListeners = () => {
   openPopupCards.addEventListener("click", popupOpenedCards);
@@ -146,7 +140,8 @@ const bindListeners = () => {
 bindListeners();
 
 initialCards.forEach((data) => {
-  getCardItem(data)
+  const cardItem = getCardItem(data);
+  elementsContainer.append(cardItem)
 });
 
 elementsContainer.addEventListener('click', function(evt){
@@ -155,31 +150,23 @@ elementsContainer.addEventListener('click', function(evt){
 
 
 
+const handlerImagePreview = (details) => {
+  imagePopupPreview.src = details.link;
+  imagePopupPreview.alt = `Изображение ${details.name}`;
+  namePopupPreview.textContent = details.name;
 
+  openPopupPreview();
+}
 
-// const cardImage = document.querySelector('.element__image');
-
-// const handlerImagePreview = (details) => {
-//   imagePopupPreview.src = details.link;
-//   imagePopupPreview.alt = `Изображение ${details.name}`;
-//   namePopupPreview.textContent = details.name;
-
-//   openPopupPreview();
-// }
-
-
-// cardImage.addEventListener('click', () => handlerImagePreview(cardDetails));
-  
-//   cardTitle.textContent = cardDetails.name;
-//   cardImage.src = cardDetails.link;
+  function openPopupPreview() {
+    popupPreview.classList.add('popup_opened');
+  }
   
 
-//   function openPopupPreview() {
-//     popupPreview.classList.add('popup_opened');
-//   }
-  
-//   function closePopupPreview() {
-//     popupPreview.classList.remove('popup_opened');
-//   };
+  function closePopupPreview() {
+    popupPreview.classList.remove('popup_opened');
+  };
+
+  buttonClosePopupPreview.addEventListener('click', closePopupPreview);
  
 
