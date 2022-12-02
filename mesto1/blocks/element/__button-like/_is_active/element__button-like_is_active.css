@@ -1,0 +1,7 @@
+.element__button-like_is_active {
+        width: 22px;
+        height: 19px;
+        background-image: url("../../../../images/like_is_active.png");
+        border: none;
+        background-color: transparent;
+}

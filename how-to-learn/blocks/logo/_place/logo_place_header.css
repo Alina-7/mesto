@@ -1,0 +1,6 @@
+.logo_place_header{/*свойства для логотипа 1*/
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 64px;
+  }

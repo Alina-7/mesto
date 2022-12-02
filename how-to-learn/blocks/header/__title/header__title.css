@@ -1,0 +1,11 @@
+.header__title{/*свойство для "начать учиться" 2*/
+    max-width: 730px;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: 600;
+    margin-left: 64px;
+    align-self: center;
+    z-index: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+  }

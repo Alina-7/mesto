@@ -1,0 +1,11 @@
+.header__subtitle{/*свойства для "какие современные и эффективные подходы"3*/
+    width: 389px;
+    line-height: 25px;
+    font-size: 18px;
+    left: 64px;
+    bottom: 30px;
+    position: absolute;
+    z-index: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
