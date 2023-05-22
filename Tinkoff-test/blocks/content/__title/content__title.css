@@ -1,0 +1,23 @@
+.content__title {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: normal;
+    margin: 0 0 16px 0;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    .content__title {
+        font-size: 21px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content__title {
+        margin-bottom: 16px;
+        white-space:normal;
+        line-height: 28px;
+
+    }
+}

@@ -1,0 +1,111 @@
+@import url("../blocks/header/header.css");
+@import url("../blocks/header/__logo/header__logo.css");
+@import url("../blocks/header/__schild/header__schild.css");
+@import url("../blocks/header/__schild-text/header__schild-text.css");
+@import url("../blocks/header/__title/header__title.css");
+
+@import url("../blocks/information/information.css");
+@import url("../blocks/information/__title/information__title.css");
+@import url("../blocks/information/__hashtags/information__hashtags.css");
+@import url("../blocks/information/__hashtag-item/information__hashtag-item.css");
+
+@import url("../blocks/content/content.css");
+@import url("../blocks/content/__title/content__title.css");
+@import url("../blocks/content/__title-decision/content__title-decision.css");
+@import url("../blocks/content/__text-item/content__text-item.css");
+@import url("../blocks/content/__link/content__link.css");
+
+@import url("../blocks/profile/profile.css");
+@import url("../blocks/profile/__image/profile__image.css");
+@import url("../blocks/profile/__info/profile__info.css");
+@import url("../blocks/profile/__info-name/profile__info-name.css");
+@import url("../blocks/profile/__info-text/profile__info-text.css");
+
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/profile/__info-name/profile__info-name.css");
+@import url("../blocks/profile/__info-text/profile__info-text.css");
+
+
+.page {
+    max-width: 784px;
+    margin: 48px auto 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+    .page {
+        max-width: 608px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .page {
+        width: 288px;
+    }
+} 
+
+
+.main {
+    max-width: 688px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        max-width: 512px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .main {
+        width: 240px;
+    }
+} 
+
+.editor {
+    color: #808C9E;
+    font-size: 15px;
+    line-height: 20px;
+    width: 233px;
+    margin: 0;
+}
+@media screen and (max-width: 320px) {
+    .editor {
+        margin-bottom: 8px;
+    }
+}
+
+.details {
+    color: #597DB3;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: underline;
+    width: 147px;
+    margin: 0;
+}
+
+ @media screen and (max-width: 768px) {
+    .page {
+        max-width: 608px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .page {
+        width: 288px;
+    }
+} 
+
+span.bold{
+font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    span.bold {
+        font-weight: normal;
+    }
+} 

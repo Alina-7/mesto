@@ -1,0 +1,14 @@
+.content__text-item {
+    margin:0 0 24px 0;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+    .content__text-item {
+        font-size: 15px;
+    }
+    .content__text-item:last-child {
+        margin-bottom: 0;
+    }
+}

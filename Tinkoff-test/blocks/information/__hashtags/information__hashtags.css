@@ -1,0 +1,16 @@
+.information__hashtags {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .information__hashtags {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .information__hashtags {
+        flex-direction: column;
+    }
+}

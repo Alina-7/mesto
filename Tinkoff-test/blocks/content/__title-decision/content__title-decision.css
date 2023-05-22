@@ -1,0 +1,9 @@
+.content__title-decision {
+    margin-top: 74px;
+}
+
+@media screen and (max-width: 320px) {
+    .content__title-decision {
+        margin-top: 0;
+    }
+}

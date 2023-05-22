@@ -1,0 +1,17 @@
+.information__hashtag-item {
+    background-color: #F1F3F5;
+    max-width: 179px;
+    min-height: 28px;
+    margin: 0 12px 0 0;
+}
+
+@media screen and (max-width: 320px) {
+    .information__hashtag-item {
+        margin-bottom: 12px;
+    }
+    .information__hashtag-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
